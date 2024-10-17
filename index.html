@@ -65,7 +65,7 @@
       const department = document.getElementById('employee-department').value.trim();
       const contact = document.getElementById('employee-contact').value.trim();
       
-      const response = await fetch('http://localhost:3000/add-employee', {
+      const response = await fetch('http://3.94.53.59:8080/add-employee', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, role, department, contact })
@@ -86,7 +86,7 @@
       
       const searchName = document.getElementById('search-name').value.trim();
       
-      const response = await fetch(`http://localhost:3000/search-employee/${searchName}`);
+      const response = await fetch(`http://3.94.53.59:8080/search-employee/${searchName}`);
       const result = await response.json();
       
       if (result.employee) {
