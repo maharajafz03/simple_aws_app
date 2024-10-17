@@ -65,6 +65,7 @@
       const department = document.getElementById('employee-department').value.trim();
       const contact = document.getElementById('employee-contact').value.trim();
       
+             // aws_ip-address
       const response = await fetch('http://3.94.53.59:8080/add-employee', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
